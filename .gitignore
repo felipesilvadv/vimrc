@@ -1,0 +1,7 @@
+*
+!*.vim/*
+!*.vim
+!.vimrc
+!.gitignore
+!.install/*.sh
+.vim/plugged/*

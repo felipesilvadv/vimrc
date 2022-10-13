@@ -137,6 +137,9 @@ nnoremap <leader>cb :cb<cr>
 nnoremap <leader>nr :cn<cr>
 nnoremap <leader>pr :cN<cr>
 
+nnoremap <leader>n <Plug>(ale_next_error)
+nnoremap <leader>N <Plug>(ale_previous_error)
+
 
 " Go back to prev 
 "
