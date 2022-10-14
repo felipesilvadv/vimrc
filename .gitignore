@@ -2,6 +2,8 @@
 !*.vim/*
 !*.vim
 !.vimrc
+!.bash_aliases
+!.zsh_aliases
 !.gitignore
 !*.install*
 !*.install/*.sh
