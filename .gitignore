@@ -3,5 +3,8 @@
 !*.vim
 !.vimrc
 !.gitignore
-!.install/*.sh
+!*.install*
+!*.install/*.sh
 .vim/plugged/*
+.vim/.netrwhist
+
