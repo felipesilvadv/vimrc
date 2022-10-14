@@ -173,8 +173,8 @@ nnoremap <silent><leader>gcr :Git reset HEAD~<cr>
 
 " Git push
 "
-nnoremap <silent><leader>gpf :Git push --force
-nnoremap <silent><leader>gps :Git push
+nnoremap <silent><leader>gpf :Git push --force<cr>
+nnoremap <silent><leader>gps :Git push<cr>
 
 
 " vim-plug update
@@ -188,6 +188,7 @@ endif
 
 call plug#begin()
 
+Plug 'kiteco/vim-plugin'
 Plug 'dense-analysis/ale'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
