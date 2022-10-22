@@ -20,4 +20,5 @@ brew install git-delta
 # Install tmuxinator
 brew install tmux
 
+brew install ranger
 

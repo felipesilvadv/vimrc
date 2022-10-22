@@ -91,6 +91,7 @@ nnoremap <leader>ag :sp<cr>:Ag<cr>
 nnoremap <leader>rg :sp<cr>:Rg<cr>
 nnoremap <leader>f :Rg<cr>
 nnoremap <leader>F :Files<cr>
+nnoremap <leader>GF :GFiles<cr>
 nnoremap <leader>bf :Buffers<cr>
 
 
@@ -129,16 +130,21 @@ nnoremap <leader>pf :% !python -m json.tool<cr>
 
 " ALE
 "
-"
+" Go to definition
 nnoremap <leader>gtd :ALEGoToDefinition -split<cr>
 nnoremap <leader>gd :ALEGoToDefinition<cr>
+" Find References
 nnoremap <leader>fr :ALEFindReferences<cr>
 nnoremap <leader>cb :cb<cr>
 nnoremap <leader>nr :cn<cr>
 nnoremap <leader>pr :cN<cr>
 
+" Jump to errors
 nnoremap <leader>n <Plug>(ale_next_error)
 nnoremap <leader>N <Plug>(ale_previous_error)
+" Fix 
+"
+nnoremap <leader>af :ALEFix<cr>:w<cr>
 
 
 " Go back to prev 
@@ -177,6 +183,11 @@ nnoremap <silent><leader>gpf :Git push --force<cr>
 nnoremap <silent><leader>gps :Git push<cr>
 
 
+" Ranger
+
+let g:ranger_map_keys = 0
+" let g:ranger_replace_netrw = 1
+
 " vim-plug update
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
@@ -200,6 +211,7 @@ Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'reactscript'] }
 Plug 'styled-components/vim-styled-components', { 'branch': 'main', 'for': ['javascript', 'reactscript'] }
 Plug 'mgechev/vim-jsx', { 'for': ['reactscript', 'javascript'] }
 Plug 'vim-python/python-syntax', { 'for': ['python'] }
+" Plug 'francoiscabrol/ranger.vim'
 " Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
 
 call plug#end()
