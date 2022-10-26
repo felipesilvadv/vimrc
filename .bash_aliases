@@ -1,2 +1,2 @@
-alias pdmdjango=pdm run python manage.py
+alias pdmdjango='pdm run python manage.py'
 
