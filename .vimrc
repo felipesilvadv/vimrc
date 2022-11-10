@@ -151,7 +151,9 @@ nnoremap <leader>af :ALEFix<cr>:w<cr>
 "
 nnoremap <leader>i <C-i>
 nnoremap <leader>o <C-o>
-
+" Go back to the last buffer
+"
+nnoremap <leader>lb :e #<cr>
 " Git fugitive
 "
 " git add current file
@@ -181,8 +183,10 @@ nnoremap <silent><leader>gcr :Git reset HEAD~<cr>
 "
 nnoremap <silent><leader>gpf :Git push --force<cr>
 nnoremap <silent><leader>gps :Git push<cr>
+nnoremap <silent><leader>gpb :execute 'Git push --set-upstream origin ' . gitbranch#name()<cr>
 
-
+" Push a WIP
+" nnoremap <silent><leader>gwip :Git add .<cr>:Git commit -m 'WIP'<cr>:Git push<cr>
 " Ranger
 
 let g:ranger_map_keys = 0
