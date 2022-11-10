@@ -1,0 +1,10 @@
+
+# pdm
+alias pdmdjango='pdm run python manage.py'
+alias poetrydjango='poetry run python manage.py'
+
+
+# Tmuxinator
+
+# alias fynsa='tmuxinator start fynsa-tesoreria'
+
