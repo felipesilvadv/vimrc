@@ -211,9 +211,9 @@ Plug 'tpope/vim-fugitive'
 Plug 'itchyny/vim-gitbranch'
 Plug 'airblade/vim-gitgutter'
 Plug 'jparise/vim-graphql', { 'for': 'graphql' }
-Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'reactscript'] }
+Plug 'yuezk/vim-js'
+Plug 'maxmellon/vim-jsx-pretty'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main', 'for': ['javascript', 'reactscript'] }
-Plug 'mgechev/vim-jsx', { 'for': ['reactscript', 'javascript'] }
 Plug 'vim-python/python-syntax', { 'for': ['python'] }
 " Plug 'francoiscabrol/ranger.vim'
 " Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
