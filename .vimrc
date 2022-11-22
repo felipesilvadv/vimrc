@@ -4,6 +4,9 @@ filetype indent on
 
 syntax on
 
+hi Error ctermfg=Black ctermbg=Red 
+hi SpellBad ctermfg=Black ctermbg=Red cterm=underline,italic
+
 set number
 set relativenumber
 set cursorline
