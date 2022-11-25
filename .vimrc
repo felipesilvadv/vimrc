@@ -206,6 +206,9 @@ endif
 
 call plug#begin()
 
+Plug 'SirVer/ultisnips'
+Plug 'mlaursen/vim-react-snippets'
+
 Plug 'kiteco/vim-plugin'
 Plug 'dense-analysis/ale'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -214,9 +217,11 @@ Plug 'tpope/vim-fugitive'
 Plug 'itchyny/vim-gitbranch'
 Plug 'airblade/vim-gitgutter'
 Plug 'jparise/vim-graphql', { 'for': 'graphql' }
+
 Plug 'pangloss/vim-javascript'
 Plug 'maxmellon/vim-jsx-pretty'
-Plug 'styled-components/vim-styled-components', { 'branch': 'main', 'for': ['javascript', 'reactscript'] }
+
+Plug 'styled-components/vim-styled-components', { 'branch': 'main', 'for': ['javascript', 'reactscript', 'javascriptreact'] }
 Plug 'vim-python/python-syntax', { 'for': ['python'] }
 " Plug 'francoiscabrol/ranger.vim'
 " Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
@@ -224,5 +229,6 @@ Plug 'vim-python/python-syntax', { 'for': ['python'] }
 call plug#end()
 
 
+let g:ale_completion_enabled = 1
 
 
