@@ -206,9 +206,7 @@ endif
 
 call plug#begin()
 
-Plug 'SirVer/ultisnips'
-Plug 'mlaursen/vim-react-snippets'
-
+Plug 'ekalinin/Dockerfile.vim'
 Plug 'kiteco/vim-plugin'
 Plug 'dense-analysis/ale'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
