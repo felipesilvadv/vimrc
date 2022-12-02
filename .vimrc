@@ -208,6 +208,9 @@ call plug#begin()
 
 Plug 'ekalinin/Dockerfile.vim'
 Plug 'kiteco/vim-plugin'
+
+Plug 'rust-lang/rust.vim'
+
 Plug 'dense-analysis/ale'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
