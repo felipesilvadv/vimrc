@@ -7,6 +7,7 @@
 !.gitignore
 !*.install*
 !*.install/*.sh
+!.tmux.conf.local
 .vim/plugged/*
 .vim/.netrwhist
 
