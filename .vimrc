@@ -68,7 +68,7 @@ let mapleader = ","
 " comments
 augroup comment_like_a_boss
     autocmd!
-    autocmd FileType c,cpp,go,javascript     let b:comment_leader = '// '
+    autocmd FileType c,cpp,go,javascript,javascriptreact     let b:comment_leader = '// '
     autocmd FileType ruby,python,graphql     let b:comment_leader = '# '
     autocmd FileType conf,fstab,sh,bash,tmux let b:comment_leader = '# '
     autocmd FileType tex                     let b:comment_leader = '% '
