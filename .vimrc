@@ -94,6 +94,7 @@ nnoremap <leader>ag :sp<cr>:Ag<cr>
 nnoremap <leader>rg :sp<cr>:Rg<cr>
 nnoremap <leader>f :Rg<cr>
 nnoremap <leader>F :Files<cr>
+nnoremap <leader>SF :sp<cr>:Files<cr>
 nnoremap <leader>GF :GFiles<cr>
 nnoremap <leader>bf :Buffers<cr>
 
