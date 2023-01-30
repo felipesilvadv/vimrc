@@ -85,6 +85,14 @@ nnoremap <leader>epy :split $HOME/.vim/ftplugin/python.vim<cr>
 nnoremap <leader>ejs :split $HOME/.vim/ftplugin/javascript.vim<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
+" Clear buffers
+nnoremap <leader>bc :%bd<cr>
+
+" Insert space within normal mode
+
+nnoremap <leader><cr> o<esc>
+nnoremap <leader><space> O<esc>
+
 " Copy and paste
 
 " vnoremap <leader>p <ESC>
@@ -225,12 +233,15 @@ Plug 'maxmellon/vim-jsx-pretty'
 
 Plug 'styled-components/vim-styled-components', { 'branch': 'main', 'for': ['javascript', 'reactscript', 'javascriptreact'] }
 Plug 'vim-python/python-syntax', { 'for': ['python'] }
+
+Plug 'dart-lang/dart-vim-plugin'
+Plug 'thosakwe/vim-flutter'
+
 " Plug 'francoiscabrol/ranger.vim'
 " Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
 
 call plug#end()
 
 
-let g:ale_completion_enabled = 1
 
 
