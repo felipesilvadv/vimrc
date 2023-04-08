@@ -33,10 +33,6 @@ augroup AutoDeleteNetrwHiddenBuffers
     	au FileType netrw setlocal bufhidden=wipe statusline=\ 
 augroup end
 
-let g:kite_supported_languages = ['*']
-let g:kite_tab_complete=1
-autocmd BufReadPost * KiteShowPopularPatterns
-
 
 
 " Add git branch to statusline
@@ -47,8 +43,6 @@ set statusline+=\[%{gitbranch#name()}\]
 set statusline+=\ %f\ %y\ %m 
 set statusline+=%=
 
-" Kite
-set statusline+=\ %{kite#statusline()}
 " ALE lint status
 
 function! LinterStatus()
@@ -77,7 +71,6 @@ augroup END
 
 noremap <silent> <leader>cc :<C-b>silent <C-e>norm ^i<C-r>=b:comment_leader<CR><CR>
 noremap <silent> <leader>uc :<C-b>silent <C-e>norm ^xx<CR>
-
 
 " Edit .vimrc
 nnoremap <leader>ev :split $MYVIMRC<cr>
@@ -156,8 +149,9 @@ nnoremap <leader>n <Plug>(ale_next_error)
 nnoremap <leader>N <Plug>(ale_previous_error)
 " Fix 
 "
-nnoremap <leader>af :ALEFix<cr>:w<cr>
+nnoremap <leader>af :ALEFix<cr>
 
+let g:ale_floating_preview = 1
 
 " Go back to prev 
 "
@@ -216,7 +210,6 @@ endif
 call plug#begin()
 
 Plug 'ekalinin/Dockerfile.vim'
-Plug 'kiteco/vim-plugin'
 
 Plug 'rust-lang/rust.vim'
 
@@ -242,6 +235,32 @@ Plug 'thosakwe/vim-flutter'
 
 call plug#end()
 
-
-
-
+let g:ale_completion_enabled = 1
+let g:ale_completion_symbols = {
+\ 'text': '',
+\ 'method': '',
+\ 'function': '',
+\ 'constructor': '',
+\ 'field': '',
+\ 'variable': '',
+\ 'class': '',
+\ 'interface': '',
+\ 'module': '',
+\ 'property': '',
+\ 'unit': 'v',
+\ 'value': 'v',
+\ 'enum': 't',
+\ 'keyword': 'v',
+\ 'snippet': 'v',
+\ 'color': 'v',
+\ 'file': 'v',
+\ 'reference': 'v',
+\ 'folder': 'v',
+\ 'enum_member': 'm',
+\ 'constant': 'm',
+\ 'struct': 't',
+\ 'event': 'v',
+\ 'operator': 'f',
+\ 'type_parameter': 'p',
+\ '<default>': 'v'
+\ }
