@@ -111,6 +111,7 @@ nnoremap <leader>bf :Buffers<cr>
 " netrw Toggle
 " 
 nnoremap <leader>t :Lexplore<cr>
+nnoremap <leader>r :Rexplore<cr>
 
 " Move between widgets
 nnoremap <leader>D <C-w>l
@@ -135,6 +136,7 @@ nnoremap <leader>pf :% !python -m json.tool<cr>
 
 " ALE
 "
+let g:ale_completion_enabled = 1
 " Go to definition
 nnoremap <leader>gtd :ALEGoToDefinition -split<cr>
 nnoremap <leader>gd :ALEGoToDefinition<cr>
@@ -151,8 +153,13 @@ nnoremap <leader>N <Plug>(ale_previous_error)
 "
 nnoremap <leader>af :ALEFix<cr>
 
-let g:ale_floating_preview = 1
+" Save after fix
+au User ALEFixPost :w
 
+nnoremap <leader>af <Plug>(ale_fix)
+
+
+let g:ale_floating_preview = 1
 " Go back to prev 
 "
 nnoremap <leader>i <C-i>
@@ -183,13 +190,22 @@ nnoremap <silent><leader>gca :Git commit --amend<cr>
 nnoremap <leader>gcm :Git commit -m '
 " reset last commit
 "
-nnoremap <silent><leader>gcr :Git reset HEAD~<cr>
+nnoremap <leader>gcu :Git reset HEAD~<cr>
+
+" git checkout 
+
+nnoremap <leader>gco :Git checkout 
 
 " Git push
 "
 nnoremap <silent><leader>gpf :Git push --force<cr>
 nnoremap <silent><leader>gps :Git push<cr>
 nnoremap <silent><leader>gpb :execute 'Git push --set-upstream origin ' . gitbranch#name()<cr>
+
+" Git pull
+"
+" Update main
+" nnoremap <silent><leader>gum :Git checkout main<cr>:Git pull<cr>
 
 " Push a WIP
 " nnoremap <silent><leader>gwip :Git add .<cr>:Git commit -m 'WIP'<cr>:Git push<cr>
