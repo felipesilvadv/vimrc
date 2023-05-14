@@ -232,9 +232,11 @@ Plug 'rust-lang/rust.vim'
 Plug 'dense-analysis/ale'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+
 Plug 'tpope/vim-fugitive'
 Plug 'itchyny/vim-gitbranch'
 Plug 'airblade/vim-gitgutter'
+
 Plug 'jparise/vim-graphql', { 'for': 'graphql' }
 
 Plug 'pangloss/vim-javascript'
