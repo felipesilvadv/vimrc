@@ -59,6 +59,8 @@ set statusline+=\ %l:%c\ %02B
 " Mappings
 let mapleader = ","
 
+nnoremap <leader>ee :e .env<cr>
+
 " comments
 augroup comment_like_a_boss
     autocmd!
