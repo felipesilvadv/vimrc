@@ -232,6 +232,7 @@ Plug 'ekalinin/Dockerfile.vim'
 Plug 'rust-lang/rust.vim'
 
 Plug 'dense-analysis/ale'
+Plug 'lbrayner/vim-rzip'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
