@@ -213,9 +213,6 @@ nnoremap <silent><leader>gpb :execute 'Git push --set-upstream origin ' . gitbra
 " nnoremap <silent><leader>gwip :Git add .<cr>:Git commit -m 'WIP'<cr>:Git push<cr>
 " Ranger
 
-let g:ranger_map_keys = 0
-" let g:ranger_replace_netrw = 1
-
 " vim-plug update
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
@@ -251,8 +248,6 @@ Plug 'vim-python/python-syntax', { 'for': ['python'] }
 Plug 'dart-lang/dart-vim-plugin'
 Plug 'thosakwe/vim-flutter'
 
-" Plug 'francoiscabrol/ranger.vim'
-" Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
 
 call plug#end()
 
