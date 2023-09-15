@@ -239,6 +239,8 @@ Plug 'airblade/vim-gitgutter'
 
 Plug 'jparise/vim-graphql', { 'for': 'graphql' }
 
+Plug 'hashivim/vim-terraform'
+
 Plug 'pangloss/vim-javascript'
 Plug 'maxmellon/vim-jsx-pretty'
 
