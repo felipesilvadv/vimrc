@@ -1,3 +1,6 @@
+# WezTerm
+
+alias wezterm='flatpak run org.wezfurlong.wezterm'
 
 # pdm
 alias pdmdjango='pdm run python manage.py'
