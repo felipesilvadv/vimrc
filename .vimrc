@@ -67,6 +67,7 @@ augroup comment_like_a_boss
     autocmd FileType c,cpp,go,javascript,javascriptreact     let b:comment_leader = '// '
     autocmd FileType ruby,python,graphql     let b:comment_leader = '# '
     autocmd FileType conf,fstab,sh,bash,tmux let b:comment_leader = '# '
+    autocmd FileType terraform               let b:comment_leader = '# '
     autocmd FileType tex                     let b:comment_leader = '% '
     autocmd FileType vim                     let b:comment_leader = '" '
 augroup END
