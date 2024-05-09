@@ -39,7 +39,7 @@ augroup end
 
 
 set statusline=
-set statusline+=\[%{gitbranch#name()}\]
+set statusline+=%{FugitiveStatusline()}
 set statusline+=\ %f\ %y\ %m 
 set statusline+=%=
 
