@@ -8,6 +8,7 @@
 !*.install*
 !*.install/*.sh
 !.tmux.conf.local
+!Brewfile
 .vim/plugged/*
 .vim/.netrwhist
 
