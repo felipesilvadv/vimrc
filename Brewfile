@@ -5,6 +5,7 @@ tap "hashicorp/terraform", "https://github.com/hashicorp/homebrew-tap"
 # Brew
 
 brew "htop"
+brew "mas"
 
 ## Search
 brew "fzf"
@@ -46,4 +47,9 @@ cask "wezterm"
 
 cask "dbeaver-community"
 cask "lastpass"
+
+
+# MAS
+
+mas "xcode", id: 497_799_835
 
