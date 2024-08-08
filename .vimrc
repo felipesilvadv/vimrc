@@ -251,6 +251,7 @@ Plug 'vim-python/python-syntax', { 'for': ['python'] }
 Plug 'dart-lang/dart-vim-plugin'
 Plug 'thosakwe/vim-flutter'
 
+Plug 'bfontaine/Brewfile.vim'
 
 call plug#end()
 
