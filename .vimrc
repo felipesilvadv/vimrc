@@ -56,6 +56,7 @@ set statusline+=%=\ %{LinterStatus()}
 " Count lines and character
 set statusline+=\ %l:%c\ %02B
 
+
 " Mappings
 let mapleader = ","
 
@@ -83,6 +84,7 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 
 " Clear buffers
 nnoremap <leader>bc :%bd<cr>
+nnoremap <leader>bd :bd<cr>
 
 " Insert space within normal mode
 
@@ -91,7 +93,9 @@ nnoremap <leader><space> O<esc>
 
 " Copy and paste
 
-" vnoremap <leader>p <ESC>
+" copy current path to system clipboard
+
+nnoremap <leader>cp :let @+ = expand("%")<cr>
 
 " Search
 nnoremap <leader>ag :sp<cr>:Ag<cr>
