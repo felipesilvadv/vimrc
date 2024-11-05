@@ -110,11 +110,11 @@ function s:parse_args(args)
     return join(map(split(a:args, " "), '"-t" .. v:val'), " ")
 endfunction
 
-command! -bang -nargs=* FilesPerType call fzf#run(fzf#wrap("Files", fzf#vim#with_preview({"source": $FZF_DEFAULT_COMMAND." ".s:parse_args(<q-args>)}), <bang>0))
+command! -bang -nargs=* -complete=filetype FilesPerType call fzf#run(fzf#wrap("Files", fzf#vim#with_preview({"source": $FZF_DEFAULT_COMMAND." ".s:parse_args(<q-args>)}), <bang>0))
 
 " Find ruby files
 nnoremap <leader>RF :FilesPerType! ruby erb<cr>
-nnoremap <leader>ft :FilesPerType!
+nnoremap <leader>ft :FilesPerType! 
 
 
 
@@ -123,6 +123,9 @@ nnoremap <leader>D <C-w>l
 nnoremap <leader>A <C-w>h
 nnoremap <leader>W <C-w>k
 nnoremap <leader>S <C-w>j
+
+" only
+nnoremap <leader>m :only<cr>
 
 " Change split
 " to Vertical
