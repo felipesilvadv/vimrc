@@ -45,6 +45,9 @@ cask "google-chrome"
 ## WezTerm
 cask "wezterm"
 
+## Write
+cask "write"
+
 cask "dbeaver-community"
 cask "lastpass"
 

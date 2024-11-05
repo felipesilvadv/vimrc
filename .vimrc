@@ -106,19 +106,17 @@ nnoremap <leader>SF :sp<cr>:Files<cr>
 nnoremap <leader>GF :GFiles<cr>
 nnoremap <leader>bf :Buffers<cr>
 
+function s:parse_args(args)
+    return join(map(split(a:args, " "), '"-t" .. v:val'), " ")
+endfunction
 
-" Undo
-" inoremap <leader>U <esc><C-r>i
-" inoremap <leader>u <esc>ui
+command! -bang -nargs=* FilesPerType call fzf#run(fzf#wrap("Files", fzf#vim#with_preview({"source": $FZF_DEFAULT_COMMAND." ".s:parse_args(<q-args>)}), <bang>0))
 
-" Save 
+" Find ruby files
+nnoremap <leader>RF :FilesPerType! ruby erb<cr>
+nnoremap <leader>ft :FilesPerType!
 
-" inoremap <C-S-S> <esc>:w<cr>
 
-" netrw Toggle
-" 
-nnoremap <leader>t :Lexplore<cr>
-nnoremap <leader>r :Rexplore<cr>
 
 " Move between widgets
 nnoremap <leader>D <C-w>l
