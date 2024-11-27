@@ -110,7 +110,7 @@ function s:parse_args(args)
     return join(map(split(a:args, " "), '"-t" .. v:val'), " ")
 endfunction
 
-command! -bang -nargs=* -complete=filetype FilesPerType call fzf#run(fzf#wrap("Files", fzf#vim#with_preview({"source": $FZF_DEFAULT_COMMAND." ".s:parse_args(<q-args>)}), <bang>0))
+command! -bang -nargs=* -complete=filetype FilesPerType call fzf#run(fzf#wrap("Files", fzf#vim#with_preview({"source": "rg --files --glob='!.git/*' ".s:parse_args(<q-args>)}), <bang>0))
 
 " Find ruby files
 nnoremap <leader>RF :FilesPerType! ruby erb<cr>

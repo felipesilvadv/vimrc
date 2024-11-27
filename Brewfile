@@ -10,6 +10,7 @@ brew "mas"
 ## Search
 brew "fzf"
 brew "ripgrep"
+brew "fd"
 
 ## Multiplex
 brew "tmux"
@@ -26,6 +27,7 @@ brew "bat"
 ## Python
 brew "pyenv"
 brew "pdm"
+brew "uv"
 
 ## Ruby
 brew "rbenv"
@@ -40,7 +42,6 @@ brew "firefoxpwa"
 ## Browser
 cask "firefox"
 cask "whatsapp"
-cask "google-chrome"
 
 ## WezTerm
 cask "wezterm"
@@ -51,8 +52,18 @@ cask "write"
 cask "dbeaver-community"
 cask "lastpass"
 
-
 # MAS
 
-mas "xcode", id: 497_799_835
+mas "Xcode", id: 497_799_835
 
+# Flutter installation
+
+cask "flutter"
+brew "cocoapods"
+
+## Android studio
+cask "android-studio"
+# cask "android-commandlinetools"
+cask "temurin"
+
+cask "google-chrome"
