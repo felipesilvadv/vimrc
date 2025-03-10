@@ -7,6 +7,11 @@ tap "hashicorp/terraform", "https://github.com/hashicorp/homebrew-tap"
 brew "htop"
 brew "mas"
 
+## Efimeros
+brew "kubectl"
+brew "yq"
+# brew "okteto"
+
 ## Search
 brew "fzf"
 brew "ripgrep"
