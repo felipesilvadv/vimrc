@@ -2,7 +2,11 @@
 ## Terraform
 tap "hashicorp/terraform", "https://github.com/hashicorp/homebrew-tap"
 
+tap "ankitpokhrel/jira-cli"
+
 # Brew
+
+brew "jira-cli"
 
 brew "htop"
 brew "mas"
@@ -19,7 +23,7 @@ brew "fd"
 
 ## Multiplex
 brew "tmux"
-brew "tmuxinator"
+# brew "tmuxinator"
 brew "tree"
 
 ## Git
@@ -39,7 +43,7 @@ brew "rbenv"
 
 ## JS
 brew "nodenv"
-brew "nvm"
+# brew "nvm"
 
 brew "firefoxpwa"
 
