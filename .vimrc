@@ -96,6 +96,7 @@ nnoremap <leader><space> O<esc>
 " copy current path to system clipboard
 
 nnoremap <leader>cp :let @+ = expand("%")<cr>
+nnoremap <leader>cl :let @+ = expand("%") . ':' . line('.')<cr>
 
 " Search
 nnoremap <leader>ag :sp<cr>:Ag<cr>
