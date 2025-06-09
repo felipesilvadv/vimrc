@@ -1,78 +1,78 @@
 # Taps
 ## Terraform
-tap "hashicorp/terraform", "https://github.com/hashicorp/homebrew-tap"
+tap 'hashicorp/terraform', 'https://github.com/hashicorp/homebrew-tap'
 
-tap "ankitpokhrel/jira-cli"
+tap 'ankitpokhrel/jira-cli'
 
 # Brew
 
-brew "jira-cli"
+brew 'jira-cli'
 
-brew "htop"
-brew "mas"
+brew 'htop'
+brew 'mas'
 
 ## Efimeros
-brew "kubectl"
-brew "yq"
+brew 'kubectl'
+brew 'yq'
 # brew "okteto"
 
 ## Search
-brew "fzf"
-brew "ripgrep"
-brew "fd"
+brew 'fzf'
+brew 'ripgrep'
+brew 'fd'
 
 ## Multiplex
-brew "tmux"
+brew 'tmux'
 # brew "tmuxinator"
-brew "tree"
+brew 'tree'
 
 ## Git
-brew "gh"
-brew "lazygit"
-brew "git-delta"
+brew 'gh'
+brew 'lazygit'
+brew 'git-delta'
 
-brew "bat"
+brew 'bat'
 
 ## Python
-brew "pyenv"
-brew "pdm"
-brew "uv"
+brew 'pyenv'
+brew 'pdm'
+brew 'uv'
 
 ## Ruby
-brew "rbenv"
+brew 'rbenv'
 
 ## JS
-brew "nodenv"
+brew 'nodenv'
 # brew "nvm"
 
-brew "firefoxpwa"
+brew 'firefoxpwa'
 
 # Cask
 ## Browser
-cask "firefox"
-cask "whatsapp"
+cask 'firefox'
+cask 'whatsapp'
 
 ## WezTerm
-cask "wezterm"
+cask 'wezterm'
 
 ## Write
-cask "write"
+cask 'write'
 
-cask "dbeaver-community"
-cask "lastpass"
+cask 'dbeaver-community'
+cask 'lastpass'
 
 # MAS
 
-mas "Xcode", id: 497_799_835
+mas 'Xcode', id: 497_799_835
 
 # Flutter installation
 
-cask "flutter"
-brew "cocoapods"
+cask 'flutter'
+brew 'cocoapods'
 
 ## Android studio
-cask "android-studio"
+cask 'android-studio'
 # cask "android-commandlinetools"
-cask "temurin"
 
-cask "google-chrome"
+cask 'zulu@17'
+cask 'google-chrome'
