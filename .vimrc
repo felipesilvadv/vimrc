@@ -258,6 +258,7 @@ Plug 'dart-lang/dart-vim-plugin'
 Plug 'thosakwe/vim-flutter'
 
 Plug 'bfontaine/Brewfile.vim'
+Plug 'prisma/vim-prisma'
 
 call plug#end()
 
