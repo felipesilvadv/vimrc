@@ -23,6 +23,8 @@ set laststatus=2
 
 set backspace=indent,eol,start
 
+set shortmess-=S
+
 " netrw like NERDTree
 let g:netrw_winsize = 20
 let g:netrw_browse_split = 4
@@ -160,7 +162,6 @@ nnoremap <leader>n <Plug>(ale_next_error)
 nnoremap <leader>N <Plug>(ale_previous_error)
 " Fix 
 "
-nnoremap <leader>af :ALEFix<cr>
 
 " Save after fix
 au User ALEFixPost :w
