@@ -113,7 +113,15 @@ function s:parse_args(args)
     return join(map(split(a:args, " "), '"-t" .. v:val'), " ")
 endfunction
 
-command! -bang -nargs=* -complete=filetype FilesPerType call fzf#run(fzf#wrap("Files", fzf#vim#with_preview({"source": "rg --files --glob='!.git/*' ".s:parse_args(<q-args>)}), <bang>0))
+command! -bang -nargs=* -complete=filetype FilesPerType call fzf#run(fzf#wrap("Files", fzf#vim#with_preview({"options": ["--scheme", "path", "-m"], "source": "rg --files --glob='!.git/*' ".s:parse_args(<q-args>)}), <bang>0))
+
+function! s:CopyResult(value)
+    let @+= a:value
+endfunction
+
+command! FindGithubUser call fzf#run(fzf#wrap("GithubUsers", { "source": "gh api /orgs/bukhr/members --paginate --jq '.[] | .login'", "sink": function("s:CopyResult")}), 0)
+
+nnoremap <leader>fu :FindGithubUser<cr>
 
 " Find ruby files
 nnoremap <leader>RF :FilesPerType! ruby erb<cr>
