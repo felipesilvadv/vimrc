@@ -1,12 +1,17 @@
+# frozen_string_literal: true
+
 # Taps
 ## Terraform
 tap 'hashicorp/terraform', 'https://github.com/hashicorp/homebrew-tap'
 
 tap 'ankitpokhrel/jira-cli'
 
+tap 'atlassian/homebrew-acli'
+
 # Brew
 
-brew 'jira-cli'
+brew 'ankitpokhrel/jira-cli/jira-cli'
+brew 'atlassian/homebrew-acli/acli'
 
 brew 'htop'
 brew 'mas'
@@ -32,6 +37,13 @@ brew 'lazygit'
 brew 'git-delta'
 
 brew 'bat'
+
+brew 'jq'
+brew 'jqp'
+brew 'gonzo'
+
+
+brew 'ffmpeg'
 
 ## Python
 brew 'pyenv'
@@ -76,3 +88,22 @@ cask 'android-studio'
 
 cask 'zulu@17'
 cask 'google-chrome'
+
+## Media
+# Cask for media applications
+cask 'vlc'
+cask 'shotcut'
+cask 'obs'
+
+# Messaging
+
+cask 'slack'
+## Email
+brew 'mutt'
+cask 'thunderbird'
+
+
+# CLI
+brew 'gemini-cli'
+cask "gcloud-cli"
+brew "googleworkspace-cli"
