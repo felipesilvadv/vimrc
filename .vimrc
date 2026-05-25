@@ -44,6 +44,7 @@ augroup end
 set statusline=
 set statusline+=%{FugitiveStatusline()}
 set statusline+=\ %f\ %y\ %m 
+set statusline+=%{gh_review#Statusline()}
 set statusline+=%=
 
 " ALE lint status
@@ -242,6 +243,8 @@ endif
 call plug#begin()
 
 Plug 'ekalinin/Dockerfile.vim'
+
+Plug 'felipesilvadv/gh-review.vim'
 
 Plug 'rust-lang/rust.vim'
 
