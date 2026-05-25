@@ -12,6 +12,7 @@ set relativenumber
 set cursorline
 
 set clipboard=unnamed
+set foldmethod=syntax
 
 set wildmenu
 set wildmode=list:longest
