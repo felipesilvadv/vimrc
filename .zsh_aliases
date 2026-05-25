@@ -1,10 +1,13 @@
 
-# pdm
-alias pdmdjango='pdm run python manage.py'
-alias poetrydjango='poetry run python manage.py'
+# Funciones 
+_get_labels () {
+	gh label list -L 900 --json name --jq '.[] | .name' | fzf -m | rg -e '(.*)\n' -r ' --label ''"''$1''"' --multiline | pbcopy
+}
 
+frg() {
+    rg --no-heading --line-number ${@} | fzf --delimiter : --preview-window 'up,+{2}/2' --preview 'bat --color=always --style=full --highlight-line {2} {1}' 
+}
 
-# Tmuxinator
-
-# alias fynsa='tmuxinator start fynsa-tesoreria'
-
+frg_vim() {
+    frg ${@} | rg -e '(?<filename>.*):(?<number>\d+)' -r '+$number $filename' -o | xargs -o vim
+}
